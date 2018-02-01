@@ -14,3 +14,22 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.content-md.outer-content {
+    background: #efeff4;
+}
+
+.list-header-md {
+    padding-left: 16px;
+    padding-left: 16px;
+    position: relative;
+    border-bottom: none;
+    margin-bottom: 0;
+    border-top: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #333;
+    background: transparent;
+}

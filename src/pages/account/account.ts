@@ -1,3 +1,4 @@
+import { StatesProvider } from './../../providers/states/states';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -15,11 +16,29 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AccountPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public logged: boolean = false;
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public states: StatesProvider
+  ) {
+  }
+
+  private watchLoginStatusChanges(): void {
+    this.logged = this.states.logged;
+    this.states.onLoggedStatusChanged.subscribe((statusLogin) => {
+      console.log(statusLogin);
+      this.logged = statusLogin;
+    });
+  }
+
+  public logout(): void {
+    this.states.logout();
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AccountPage');
+    this.watchLoginStatusChanges();
   }
 
 }
