@@ -1,5 +1,6 @@
+import { StatesProvider } from './../../providers/states/states';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, LoadingController, App } from 'ionic-angular';
 
 /**
  * Generated class for the LoginPage page.
@@ -15,11 +16,37 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  public loginForm: any;
+  public backgroundImage = 'assets/imgs/background-2.jpg';
+
+  constructor(
+    public loadingCtrl: LoadingController,
+    public navCtrl: NavController,
+    public app: App,
+    public states: StatesProvider,
+  ) { }
+
+  login() {
+    const loading = this.loadingCtrl.create({
+      duration: 500
+    });
+
+    loading.onDidDismiss(() => {
+      this.navCtrl.pop().catch(() => {
+        return this.navCtrl.setRoot('TabsPage');
+      });
+    });
+
+    loading.present();
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+  goToSignup() {
+    this.navCtrl.push('SignupPage');
+  }
+
+  goToResetPassword() {
+    // this.navCtrl.push(ResetPasswordPage);
   }
 
 }
