@@ -5,37 +5,22 @@ export const categories = [
         icon: '',
         places: [
             {
-                name: '',
-                address: '',
+                name: 'Days Inn - London Ontario',
+                address: '1100 Wellington Road South, N6E 1M2 London, Canada –(6 km from airport)',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
             {
-                name: '',
-                address: '',
+                name: 'Quality Suites London',
+                address: '1120 Dearness Drive, N6E 1N9 London, Canada (3 km from airport)',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
             {
-                name: '',
-                address: '',
+                name: 'Doubletree by Hilton London Opens in new window',
+                address: '300 King Street, N6B 1S2 London, Canada',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
         ]
     },
@@ -48,33 +33,18 @@ export const categories = [
                 address: '',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
             {
                 name: '',
                 address: '',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
             {
                 name: '',
                 address: '',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
         ]
     },
@@ -87,33 +57,18 @@ export const categories = [
                 address: '',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
             {
                 name: '',
                 address: '',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
             {
                 name: '',
                 address: '',
                 picture: '',
                 isFavorite: false,
-                services: [
-                    {
-                        
-                    }
-                ]
             },
         ]
     },
