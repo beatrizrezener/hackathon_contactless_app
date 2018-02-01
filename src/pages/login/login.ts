@@ -31,7 +31,7 @@ export class LoginPage {
     const loading = this.loadingCtrl.create({
       duration: 500
     });
-
+    this.states.login();
     loading.onDidDismiss(() => {
       this.navCtrl.pop().catch(() => {
         return this.navCtrl.setRoot('TabsPage');

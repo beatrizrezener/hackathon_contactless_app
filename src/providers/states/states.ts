@@ -11,7 +11,7 @@ import { Subject } from 'rxjs';
 export class StatesProvider {
 
   public logged: boolean = false;
-  public onLoggedStatusChanged: Subject<any> = new Subject<any>();
+  public onLoggedStatusChanged: Subject<boolean> = new Subject<boolean>();
 
   constructor() {
   }

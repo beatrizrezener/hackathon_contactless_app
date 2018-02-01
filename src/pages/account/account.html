@@ -5,14 +5,37 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>account</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Conta</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content class="outer-content">
+  <ion-list *ngIf="logged" no-margin>
+    <ion-list-header></ion-list-header>
+    <button ion-item navPush="MyBookingPage">
+      <ion-icon item-left name="bookmark"></ion-icon>
+      Minhas reservas
+    </button>
+  </ion-list>
+  <ion-list>
+    <ion-list-header></ion-list-header>
+    <ng-container *ngIf="logged">
+      <button ion-item (click)="logout()">
+        <ion-icon item-left name="log-out"></ion-icon>
+        Sair
+      </button>
+    </ng-container>
+    <ng-container *ngIf="!logged">
+      <button ion-item navPush="LoginPage">
+        <ion-icon item-left name="log-in"></ion-icon>
+        Entrar
+      </button>
+      <button ion-item navPush="SignupPage">
+        <ion-icon item-left name="add"></ion-icon>
+        Cadastre-se
+      </button>
+    </ng-container>
+  </ion-list>
 </ion-content>
