@@ -1,4 +1,4 @@
-import { categories } from './../../models/place';
+import { categories, Place } from './../../models/place';
 import { Component, Input, OnInit } from '@angular/core';
 
 /**
@@ -15,7 +15,7 @@ export class PlaceComponent implements OnInit {
 
   @Input() public catIndex: number;
   @Input() public placeIndex: number;
-  public place;
+  public place: Place;
 
   constructor() {
   }

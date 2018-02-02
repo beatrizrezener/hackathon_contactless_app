@@ -1,3 +1,10 @@
+export interface Place {
+    name: string;
+    address: string;
+    picture: string;
+    isFavorite: boolean;
+}
+
 export const categories = [
     {
         name: 'Hospedagem',
