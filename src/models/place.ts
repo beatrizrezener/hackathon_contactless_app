@@ -12,7 +12,7 @@ export const categories = [
         places: [
             {
                 name: 'Days Inn - London Ontario',
-                address: '1100 Wellington Road South, N6E 1M2 London, Canada –(6 km from airport)',
+                address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
                 picture: 'assets/imgs/hotel_example_1.jpg',
                 isFavorite: true,
             },
@@ -36,7 +36,7 @@ export const categories = [
         places: [
             {
                 name: 'Days Inn - London Ontario',
-                address: '1100 Wellington Road South, N6E 1M2 London, Canada –(6 km from airport)',
+                address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
                 picture: 'assets/imgs/hotel_example_1.jpg',
                 isFavorite: true,
             },
@@ -60,7 +60,7 @@ export const categories = [
         places: [
             {
                 name: 'Days Inn - London Ontario',
-                address: '1100 Wellington Road South, N6E 1M2 London, Canada –(6 km from airport)',
+                address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
                 picture: 'assets/imgs/hotel_example_1.jpg',
                 isFavorite: true,
             },
@@ -84,7 +84,7 @@ export const categories = [
         places: [
             {
                 name: 'Days Inn - London Ontario',
-                address: '1100 Wellington Road South, N6E 1M2 London, Canada –(6 km from airport)',
+                address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
                 picture: 'assets/imgs/hotel_example_1.jpg',
                 isFavorite: true,
             },
@@ -108,7 +108,7 @@ export const categories = [
         places: [
             {
                 name: 'Days Inn - London Ontario',
-                address: '1100 Wellington Road South, N6E 1M2 London, Canada –(6 km from airport)',
+                address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
                 picture: 'assets/imgs/hotel_example_1.jpg',
                 isFavorite: true,
             },
@@ -132,7 +132,7 @@ export const categories = [
         places: [
             {
                 name: 'Days Inn - London Ontario',
-                address: '1100 Wellington Road South, N6E 1M2 London, Canada –(6 km from airport)',
+                address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
                 picture: 'assets/imgs/hotel_example_1.jpg',
                 isFavorite: true,
             },

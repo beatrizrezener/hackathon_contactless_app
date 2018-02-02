@@ -10,4 +10,5 @@ import { PlacePage } from './place';
     IonicPageModule.forChild(PlacePage),
   ],
 })
+
 export class PlacePageModule {}

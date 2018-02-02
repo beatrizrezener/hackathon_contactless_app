@@ -1,4 +1,4 @@
-import { categories } from './../../models/place';
+import { categories, Place } from './../../models/place';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -18,7 +18,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PlacePage {
 
-  public place;
+  public place: Place;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
