@@ -1,3 +1,4 @@
+import { Category, categories } from './../../models/place';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -15,7 +16,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MyBookingPage {
 
+  public categories: Category[] = categories;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  public getIndex(index: number, length: number): number {
+    return index % length;
   }
 
   ionViewDidLoad() {

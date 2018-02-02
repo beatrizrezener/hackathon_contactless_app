@@ -16,67 +16,30 @@
   <section class="housing-image" [ngStyle]="{ 'background-image': 'url(' + place?.picture + ')'}">
     <section class="housing-banner" padding>
       <span class="housing-title">{{ place?.name }}</span>
-      <span class="price"> R$ 10,00 / hora </span>
+      <span class="price"> {{ place?.price }} </span>
     </section>
   </section>
   <section class="main-content">
-    <ion-grid class="listing-details">
-      <ion-row>
-        <ion-col>
-          <ion-icon name="pin"></ion-icon>{{ place?.address }}
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    <ion-grid class="main-features">
-      <ion-row>
-        <ion-col text-center>
-          <img src="../../assets/imgs/hotel.png" width="50px" height="50px">
-          <span class="item-block">Hospedagem</span>
-        </ion-col>
-        <ion-col text-center>
-          <img src="../../assets/imgs/swim.png" width="50px" height="50px">
-          <span class="item-block">Piscina</span>
-        </ion-col>
-        <ion-col text-center>
-          <img src="../../assets/imgs/spa.png" width="50px" height="50px">
-          <span class="item-block">Spa</span>
-        </ion-col>
-      </ion-row>
-      <div class="hr"> </div>
-      <section style="text-align: center;">
-        <button ion-button color="secondary" navPush="CheckoutPage" [navParams]="{ catIndex: catIndex, placeIndex: placeIndex }">Efetuar Reserva</button>
-      </section>
-    </ion-grid>
-    <ion-grid class="listing-details">
-      <ion-row>
-        <ion-col>
-          Valores por hora em reais
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          Hospedagem
-        </ion-col>
-        <ion-col>
-          30
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          Piscina
-        </ion-col>
-        <ion-col>
-          25
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          Spa
-        </ion-col>
-        <ion-col>
-          70
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+  <section style="text-align: center;" margin-top>
+    <button ion-button color="secondary" navPush="CheckoutPage" [navParams]="{ catIndex: catIndex, placeIndex: placeIndex }">Efetuar Reserva</button>
+  </section>
+  <ion-list>
+    <ion-list-header> Detalhes </ion-list-header>
+    <ion-item text-wrap>
+      <ion-icon name="pin" item-left></ion-icon>
+      <p> {{ place?.address }} </p>
+    </ion-item>
+  </ion-list>
+  <ion-list no-margin>
+    <ion-list-header>Outros serviços</ion-list-header>
+  </ion-list>
+  <ion-grid class="main-features">
+    <ion-row *ngIf="place">
+      <ion-col text-center col-4 *ngFor="let service of place.otherServices" tappable navPush="PlacePage" [navParams]="service.params">
+        <img [src]="service.icon" width="50px" height="50px">
+        <div text-center>{{ service.name }}</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   </section>
 </ion-content>

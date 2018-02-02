@@ -12,15 +12,15 @@
 
 
 <ion-content class="outer-content">
-  <ion-list *ngIf="logged" no-margin>
-    <ion-list-header></ion-list-header>
+  <ion-list *ngIf="logged">
+    <ion-list-header>Opções</ion-list-header>
     <button ion-item navPush="MyBookingPage">
       <ion-icon item-left name="bookmark"></ion-icon>
       Minhas reservas
     </button>
   </ion-list>
   <ion-list>
-    <ion-list-header></ion-list-header>
+    <ion-list-header>Credenciais</ion-list-header>
     <ng-container *ngIf="logged">
       <button ion-item (click)="logout()">
         <ion-icon item-left name="log-out"></ion-icon>

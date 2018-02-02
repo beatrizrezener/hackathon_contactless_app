@@ -14,9 +14,27 @@
 
 
 <ion-content class="outer-content">
-  <h3 padding-horizontal> Pagar com Visa Checkout </h3>
-  <p padding-horizontal>Valor: R$ 10,00 </p>
-  <section class="payment" text-center>
-    <img alt="Visa Checkout" class="v-button" role="button" src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
+  <ion-list>
+    <ion-list-header> Finalizar reserva </ion-list-header>
+    <ion-item>
+      <ion-icon item-left color="secondary" name="cash"></ion-icon>
+      <h2> Pagar com Visa Checkout</h2>
+      <p> Valor: {{ place?.price }} </p>
+    </ion-item>
+    <ion-item text-wrap>
+      <ion-icon item-left name="pin" color="primary"> </ion-icon>
+      <h2> {{ place?.name }} </h2>
+      <p> {{ place?.address  }} </p>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>Detalhes</ion-list-header>
+    <ion-item>
+      <ion-label floating> Data da reserva </ion-label>
+      <ion-datetime></ion-datetime>
+    </ion-item>    
+  </ion-list>
+  <section class="payment" text-center padding>
+    <img alt="Visa Checkout" width="80%" class="v-button" role="button" src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
   </section>
 </ion-content>
