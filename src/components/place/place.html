@@ -1,4 +1,9 @@
-<!-- Generated template for the PlaceComponent component -->
-<div>
-  {{text}}
-</div>
+<ion-card tappable navPush="PlacePage" [navParams]="{ catIndex: catIndex, placeIndex: placeIndex }">
+  <img [src]="place?.picture">
+
+  <ion-item text-wrap>
+    <h2>{{ place?.name }}</h2>
+    <p> {{ place.address }} </p>
+    <ion-icon [name]="getStar()" item-right></ion-icon>
+  </ion-item>
+</ion-card>

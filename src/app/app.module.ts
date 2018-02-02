@@ -13,7 +13,11 @@ import { StatesProvider } from '../providers/states/states';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      ios: {
+        backButtonText: 'Voltar'
+      }
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

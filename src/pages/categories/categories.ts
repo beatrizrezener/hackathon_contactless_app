@@ -1,3 +1,4 @@
+import { categories } from './../../models/place';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -8,18 +9,30 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  segment: 'category/:catIndex'
+})
 @Component({
   selector: 'page-categories',
   templateUrl: 'categories.html',
 })
 export class CategoriesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public category;
+  public catIndex: number;
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+  ) {}
+
+  public getCategory(): void {
+    this.catIndex = Number(this.navParams.get('catIndex'));
+    this.category = categories[this.catIndex];
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CategoriesPage');
+    this.getCategory();
   }
 
 }

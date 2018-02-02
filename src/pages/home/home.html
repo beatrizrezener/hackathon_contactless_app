@@ -19,7 +19,10 @@
     Mooca, São Paulo - São Paulo
   </section>
   <div class="pins">
-    <div class="pin" *ngFor="let category of categories">
+    <div class="pin" tappable navPush="CategoriesPage" [navParams]="{ catIndex: i }" *ngFor="let category of categories; let i = index">
+      <div class="icon">
+        <img [src]="category.icon" height="40px" alt="">
+      </div>
       {{ category.name }}
     </div>
   </div>

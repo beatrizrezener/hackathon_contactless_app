@@ -6,13 +6,13 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>categories</ion-title>
+  <ion-navbar color="primary">
+    <ion-title> {{ category?.name }} </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content class="outer-content">
+  <place [catIndex]="catIndex" [placeIndex]="i" *ngFor="let place of category?.places; let i = index;"></place>
 </ion-content>

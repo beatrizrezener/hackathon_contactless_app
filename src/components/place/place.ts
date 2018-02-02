@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { categories } from './../../models/place';
+import { Component, Input, OnInit } from '@angular/core';
 
 /**
  * Generated class for the PlaceComponent component.
@@ -10,13 +11,29 @@ import { Component } from '@angular/core';
   selector: 'place',
   templateUrl: 'place.html'
 })
-export class PlaceComponent {
+export class PlaceComponent implements OnInit {
 
-  text: string;
+  @Input() public catIndex: number;
+  @Input() public placeIndex: number;
+  public place;
 
   constructor() {
-    console.log('Hello PlaceComponent Component');
-    this.text = 'Hello World';
+  }
+
+  getPlace() {
+    this.place = categories[this.catIndex].places[this.placeIndex];
+    console.log(this.place);
+  }
+
+  getStar() {
+    if (this.place && this.place.isFavorite) {
+      return 'star';
+    }
+    return 'star-outline';
+  }
+
+  ngOnInit() {
+    this.getPlace();
   }
 
 }

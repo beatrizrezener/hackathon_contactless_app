@@ -13,9 +13,12 @@ page-home {
         text-align: center;
         box-sizing: border-box;
         border: 1px solid #dedede;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         background: #fff;
         padding-top: 20px;
+        .icon {
+            margin-bottom: 10px;
+        }
         padding-bottom: 20px;
     }
 
