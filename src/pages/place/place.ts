@@ -1,3 +1,4 @@
+import { categories } from './../../models/place';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -8,18 +9,28 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  segment: 'category/:catIndex/place/:placeIndex'
+})
 @Component({
   selector: 'page-place',
   templateUrl: 'place.html',
 })
 export class PlacePage {
 
+  public place;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  private getPlace(): void {
+    const catIndex = this.navParams.get('catIndex');
+    const placeIndex = this.navParams.get('placeIndex');
+    this.place = categories[catIndex].places[placeIndex];
+  }
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PlacePage');
+    this.getPlace();
   }
 
 }
