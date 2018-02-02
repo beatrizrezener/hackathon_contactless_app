@@ -16,7 +16,7 @@
   <section class="housing-image" [ngStyle]="{ 'background-image': 'url(' + place?.picture + ')'}">
     <section class="housing-banner" padding>
       <span class="housing-title">{{ place?.name }}</span>
-      <span class="price">???</span>
+      <span class="price"> R$ 10,00 / hora </span>
     </section>
   </section>
   <section class="main-content">
@@ -44,7 +44,7 @@
       </ion-row>
       <div class="hr"> </div>
       <section style="text-align: center;">
-        <button ion-button color="secondary">Efetuar Reserva</button>
+        <button ion-button color="secondary" navPush="CheckoutPage" [navParams]="{ catIndex: catIndex, placeIndex: placeIndex }">Efetuar Reserva</button>
       </section>
     </ion-grid>
     <ion-grid class="listing-details">

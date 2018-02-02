@@ -8,36 +8,32 @@
 </ion-header>
 
 
-<ion-content class="outer-content" padding>
-
+<ion-content class="outer-content">
   <ion-card>
     <ion-item>
-      <h2>Reserva Piscina Semi Olimpica</h2>
-      <p>26 Dez/2017, 11:00am a 13:00am</p>
+      <ion-thumbnail item-left>
+        <img [src]="place?.picture" alt="">
+      </ion-thumbnail>
+      <h2> {{ place?.name }} </h2>
+      <p>26 Dez/2017, 11:00 às 13:00</p>
 
-      <div class="row">
-        <div class="col" text-right>R$ 150,00</div>
-      </div>
 
       <hr class="dotted">
-      <h3>Código de Reserva: #149483829</h3>
+      <ion-row>
+        <ion-col>
+          Preço:
+        </ion-col>
+        <ion-col text-right> R$ 150,00</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col> Código de Reserva: </ion-col>
+        <ion-col text-right> #149483829 </ion-col>
+      </ion-row>
 
     </ion-item>
   </ion-card>
 
-  <ion-card>
-    <ion-item>
-      <h2>Reserva Piscina Semi Olimpica</h2>
-      <p>26 Dez/2017, 11:00am a 13:00am</p>
 
-      <div class="row">
-        <div class="col" text-right>R$ 150,00</div>
-      </div>
-
-      <hr class="dotted">
-      <h3>Código de Reserva: #149483829</h3>
-    </ion-item>
-  </ion-card>
 
 
 </ion-content>

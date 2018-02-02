@@ -33,9 +33,14 @@ export class PlaceComponent implements OnInit {
 
   getStar() {
     if (this.place && this.place.isFavorite) {
-      return 'star';
+      return 'heart';
     }
-    return 'star-outline';
+    return 'heart-outline';
+  }
+
+  preventDefault(event: MouseEvent) {
+    event.stopPropagation();
+    event.preventDefault();
   }
 
   favorite(event: MouseEvent) {

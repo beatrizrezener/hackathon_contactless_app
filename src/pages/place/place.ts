@@ -19,14 +19,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class PlacePage {
 
   public place: Place;
+  public catIndex: number;
+  public placeIndex: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   private getPlace(): void {
-    const catIndex = this.navParams.get('catIndex');
-    const placeIndex = this.navParams.get('placeIndex');
-    this.place = categories[catIndex].places[placeIndex];
+    this.catIndex = Number(this.navParams.get('catIndex'));
+    this.placeIndex = Number(this.navParams.get('placeIndex'));
+    this.place = categories[this.catIndex].places[this.placeIndex];
   }
 
   ionViewDidLoad() {
