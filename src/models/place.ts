@@ -13,19 +13,19 @@ export const categories = [
             {
                 name: 'Days Inn - London Ontario',
                 address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
-                picture: 'assets/imgs/hotel_example_1.jpg',
+                picture: 'assets/imgs/hotel/1.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Quality Suites London',
                 address: '1120 Dearness Drive, N6E 1N9 London, Canada (3 km from airport)',
-                picture: 'assets/imgs/hotel_example_2.jpg',
+                picture: 'assets/imgs/hotel/2.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Doubletree by Hilton London Opens in new window',
                 address: '300 King Street, N6B 1S2 London, Canada',
-                picture: 'assets/imgs/hotel_example_3.jpg',
+                picture: 'assets/imgs/hotel/3.jpg',
                 isFavorite: false,
             },
         ]
@@ -37,19 +37,19 @@ export const categories = [
             {
                 name: 'Days Inn - London Ontario',
                 address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
-                picture: 'assets/imgs/hotel_example_1.jpg',
+                picture: 'assets/imgs/gym/1.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Quality Suites London',
                 address: '1120 Dearness Drive, N6E 1N9 London, Canada (3 km from airport)',
-                picture: 'assets/imgs/hotel_example_2.jpg',
+                picture: 'assets/imgs/gym/2.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Doubletree by Hilton London Opens in new window',
                 address: '300 King Street, N6B 1S2 London, Canada',
-                picture: 'assets/imgs/hotel_example_3.jpg',
+                picture: 'assets/imgs/gym/3.jpg',
                 isFavorite: false,
             },
         ]
@@ -61,19 +61,19 @@ export const categories = [
             {
                 name: 'Days Inn - London Ontario',
                 address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
-                picture: 'assets/imgs/hotel_example_1.jpg',
+                picture: 'assets/imgs/swim/1.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Quality Suites London',
                 address: '1120 Dearness Drive, N6E 1N9 London, Canada (3 km from airport)',
-                picture: 'assets/imgs/hotel_example_2.jpg',
+                picture: 'assets/imgs/swim/2.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Doubletree by Hilton London Opens in new window',
                 address: '300 King Street, N6B 1S2 London, Canada',
-                picture: 'assets/imgs/hotel_example_3.jpg',
+                picture: 'assets/imgs/swim/3.jpg',
                 isFavorite: false,
             },
         ]
@@ -85,19 +85,19 @@ export const categories = [
             {
                 name: 'Days Inn - London Ontario',
                 address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
-                picture: 'assets/imgs/hotel_example_1.jpg',
+                picture: 'assets/imgs/hidro/1.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Quality Suites London',
                 address: '1120 Dearness Drive, N6E 1N9 London, Canada (3 km from airport)',
-                picture: 'assets/imgs/hotel_example_2.jpg',
+                picture: 'assets/imgs/hidro/2.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Doubletree by Hilton London Opens in new window',
                 address: '300 King Street, N6B 1S2 London, Canada',
-                picture: 'assets/imgs/hotel_example_3.jpg',
+                picture: 'assets/imgs/hidro/3.jpg',
                 isFavorite: false,
             },
         ]
@@ -109,19 +109,19 @@ export const categories = [
             {
                 name: 'Days Inn - London Ontario',
                 address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
-                picture: 'assets/imgs/hotel_example_1.jpg',
+                picture: 'assets/imgs/spa/1.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Quality Suites London',
                 address: '1120 Dearness Drive, N6E 1N9 London, Canada (3 km from airport)',
-                picture: 'assets/imgs/hotel_example_2.jpg',
+                picture: 'assets/imgs/spa/2.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Doubletree by Hilton London Opens in new window',
                 address: '300 King Street, N6B 1S2 London, Canada',
-                picture: 'assets/imgs/hotel_example_3.jpg',
+                picture: 'assets/imgs/spa/3.jpg',
                 isFavorite: false,
             },
         ]
@@ -133,19 +133,19 @@ export const categories = [
             {
                 name: 'Days Inn - London Ontario',
                 address: '1100 Wellington Road South, N6E 1M2 London, Canada (6 km from airport)',
-                picture: 'assets/imgs/hotel_example_1.jpg',
+                picture: 'assets/imgs/luggage/1.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Quality Suites London',
                 address: '1120 Dearness Drive, N6E 1N9 London, Canada (3 km from airport)',
-                picture: 'assets/imgs/hotel_example_2.jpg',
+                picture: 'assets/imgs/luggage/2.jpg',
                 isFavorite: false,
             },
             {
                 name: 'Doubletree by Hilton London Opens in new window',
                 address: '300 King Street, N6B 1S2 London, Canada',
-                picture: 'assets/imgs/hotel_example_3.jpg',
+                picture: 'assets/imgs/luggage/3.jpg',
                 isFavorite: false,
             },
         ]
