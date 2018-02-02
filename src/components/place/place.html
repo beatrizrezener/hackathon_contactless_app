@@ -3,7 +3,7 @@
 
   <ion-item text-wrap>
     <h2>{{ place?.name }}</h2>
-    <p> {{ place.address }} </p>
-    <ion-icon [name]="getStar()" item-right></ion-icon>
+    <p> {{ place?.address }} </p>
+    <ion-icon (click)="favorite($event)" [name]="getStar()" color="positive" item-right></ion-icon>
   </ion-item>
 </ion-card>
