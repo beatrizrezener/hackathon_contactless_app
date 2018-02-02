@@ -1,4 +1,3 @@
-
 export const categories = [
     {
         name: 'Hospedagem',
