@@ -1,18 +1,15 @@
-
 <ion-header>
-
   <ion-navbar color="primary">
     <ion-title>Favoritos</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content>
-
-  <place [placeIndex]="0" [catIndex]="0"></place>
-  <place [placeIndex]="1" [catIndex]="0"></place>
-  <place [placeIndex]="2" [catIndex]="0"></place>
-
-
+  <place [placeIndex]="favorite.placeIndex" [catIndex]="favorite.catIndex" *ngFor="let favorite of favorites"></place>
+  <ion-list *ngIf="!favorites?.length">
+    <ion-item>
+      <h2>Não há serviços em sua lista de favoritos. </h2>
+      <p> Adicione em sua lista de ofertas :). </p>
+    </ion-item>
+  </ion-list>
 </ion-content>

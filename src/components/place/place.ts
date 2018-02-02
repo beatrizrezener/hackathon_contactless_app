@@ -1,3 +1,4 @@
+import { StatesProvider } from './../../providers/states/states';
 import { categories, Place } from './../../models/place';
 import { Component, Input, OnInit } from '@angular/core';
 
@@ -17,10 +18,15 @@ export class PlaceComponent implements OnInit {
   @Input() public placeIndex: number;
   public place: Place;
 
-  constructor() {
+  constructor(
+    public state: StatesProvider,
+  ) {
   }
 
   getPlace() {
+    if (!categories[this.catIndex]) {
+      return;
+    }
     this.place = categories[this.catIndex].places[this.placeIndex];
     console.log(this.place);
   }
@@ -30,6 +36,13 @@ export class PlaceComponent implements OnInit {
       return 'star';
     }
     return 'star-outline';
+  }
+
+  favorite(event: MouseEvent) {
+    this.place.isFavorite = !this.place.isFavorite;
+    event.stopPropagation();
+    event.preventDefault();
+    this.state.favorite(this.place, this.catIndex, this.placeIndex);
   }
 
   ngOnInit() {

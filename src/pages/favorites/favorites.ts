@@ -1,3 +1,4 @@
+import { StatesProvider, Favorites } from './../../providers/states/states';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -15,11 +16,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FavoritesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  public favorites: Favorites[] = [];
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public state: StatesProvider,
+    ) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FavoritesPage');
+    this.favorites = this.state.favorites;
   }
 
 }
