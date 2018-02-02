@@ -32,7 +32,7 @@ export class StatesProvider {
             catIndex: c,
           });
         }
-      p++;
+        p++;
       }
       c++;
     }
